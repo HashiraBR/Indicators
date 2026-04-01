@@ -1,7 +1,8 @@
-#property copyright "Copyright 2024"
-#property link      "https://www.mql5.com"
+#property copyright "Copyright 2026"
+#property link      "https://www.autotradex.com.br"
 #property version   "1.00"
 #property description "VWAP - Volume Weighted Average Price"
+#property description "Autor: AutoTradex | https://www.autotradex.com.br | @AutoTradex"
 #property indicator_chart_window
 #property indicator_buffers 1
 #property indicator_plots   1
@@ -10,7 +11,7 @@
 #property indicator_color1  clrBlue
 #property indicator_width1  2
 
-input int InpPeriod = 0; // Período VWAP: 0 = abertura do dia; >0 = últimas N barras
+input int InpPeriod = 0; // Período VWAP (0 = abertura do dia)
 
 double vwapBuffer[];
 
