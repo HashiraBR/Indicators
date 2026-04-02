@@ -23,7 +23,7 @@ input bool countdown_mode = true; // true = decrescente, false = crescente
 input int font_size = 14; // Tamanho da fonte para o timer
 input string font_name = "Arial"; // Nome da fonte para o timer
 input color text_color = clrBlue; // Cor do texto
-input int offset_x = 20; // Distância horizontal (pixels)
+input int offset_x = 75; // Distância horizontal (pixels)
 input int offset_y = 10; // Distância vertical (pixels)
 
 int OnInit()
@@ -128,7 +128,7 @@ void UpdateLabelPosition(string timer_text, const datetime &time[], const double
     }
     
     // Fallback: usar posicionamento por canto se não conseguir posicionar ao lado da vela
-    ENUM_BASE_CORNER use_corner = POSITION_RIGHT_UPPER;
+    ENUM_BASE_CORNER use_corner = CORNER_RIGHT_UPPER;
     
     // Para canto à direita, ajustar se sair do gráfico
     if(use_corner == CORNER_RIGHT_UPPER || use_corner == CORNER_RIGHT_LOWER)
